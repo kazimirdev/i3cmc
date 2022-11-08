@@ -1,4 +1,5 @@
 echo "Input cryptocurrency name:"
-read CC_NAME
+read NAME
 
-echo "CC_NAME='${CC_NAME}'" > .env
+echo "NAME='${NAME}'
+PRICE=-1" > .env
