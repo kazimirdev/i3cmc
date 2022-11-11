@@ -30,6 +30,9 @@ env/
 pip-log.txt
 pip-delete-this-directory.txt
 
+# JSON files
+*.json
+
 # Unit test / coverage reports
 .tox/
 .coverage
