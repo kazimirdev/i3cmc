@@ -1,1 +1,1 @@
-from .cmcparsing import parser
+from .parsing import parser

@@ -1,5 +1,4 @@
-[coin]
-command=python main.py
-label=Price: 
-interval=15
+[i3cmc]
+command=python /home/grn/.config/i3blocks/i3cmc/main.py
+interval=60
 signal=1
