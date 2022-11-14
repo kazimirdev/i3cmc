@@ -1,8 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-from src.exceptions import InputError
-
 
 def parser(coin: str):
     try:
@@ -12,8 +10,7 @@ def parser(coin: str):
         html = request.text
         soup = BeautifulSoup(html, "html.parser")
         if "something went wrong" in soup.text:
-            print("Run install script one more time and check input.")
-            raise InputError(coin)
+            raise Exception("Check Name")
         else:
             price_value_class = soup.find("div", {'class': "priceValue"})
             span: str = price_value_class.find("span").string
@@ -21,3 +18,4 @@ def parser(coin: str):
             return result
     except:
        return request.status_code
+

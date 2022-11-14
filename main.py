@@ -17,7 +17,7 @@ def main():
     data = open("data.json", "w+")
     dump(output, data)
     data.close()
-    print('|'.join({f"{key}:{output[key]['price']}" if not output[key]['error'] else f"{key}:{output[key]['price']}[cache]" for key in tuple(output.keys())}))
+    print(' | '.join({f"{key}:{output[key]['price']}" if not output[key]['error'] else f"{key}:{output[key]['price']}[cache]" for key in tuple(output.keys())}))
         
 
 if __name__ == "__main__":
