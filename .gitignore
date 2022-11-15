@@ -31,7 +31,7 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # JSON files
-*.json
+data.json
 
 # Unit test / coverage reports
 .tox/
