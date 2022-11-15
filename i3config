@@ -1,9 +1,0 @@
-bar {
-        font pango:Days 9
-        output eDP
-        position bottom
-    	status_command i3blocks -c ~/.config/i3blocks/i3cmc/config
-	workspace_buttons no
-	tray_output none
-	
-        }
